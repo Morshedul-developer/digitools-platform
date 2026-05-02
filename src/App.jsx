@@ -8,6 +8,7 @@ import Products from "./components/Products/Products";
 import Carts from "./components/Carts/Carts";
 import Steps from "./components/Steps/Steps";
 import Pricing from "./components/Pricing/Pricing";
+import Footer from "./components/Footer/Footer";
 
 const productItems = fetch("/products.json").then((res) => res.json());
 
@@ -26,6 +27,7 @@ function App() {
       {products === "carts" && <Carts />}
       <Steps/>
       <Pricing pricingItems={pricingItems}/>
+      <Footer/>
     </>
   );
 }

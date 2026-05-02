@@ -55,18 +55,24 @@ const Navbar = () => {
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 font-semibold">
-            {links}
-          </ul>
+          <ul className="menu menu-horizontal px-1 font-semibold">{links}</ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end flex items-center gap-5">
           <div className="relative inline-block">
-            <IoCartOutline size={24}/>
-            <span className="absolute bg-red-500 rounded-full text-white w-4.5 h-4.5 flex items-center justify-center text-xs -top-2 -right-2">
+            <IoCartOutline size={20} />
+            <span className="absolute bg-red-500 rounded-full text-white w-4 h-4 flex items-center justify-center text-xs -top-2 -right-2">
               0
             </span>
           </div>
-          <a className="btn">Button</a>
+          <a
+            href="/login"
+            className="hover:text-gray-700 font-semibold text-[14px]"
+          >
+            Log in
+          </a>
+          <button className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-6 text-white hover:from-[#9514FA] hover:to-[#4F39F6] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#4F39F6]/40 active:translate-y-0 active:scale-95">
+            Get Started
+          </button>
         </div>
       </div>
     </div>

@@ -33,7 +33,7 @@ const Product = ({ product }) => {
           </span>
         </p>
         <p className="text-gray-500">{description}</p>
-        <ul className="mt-3 flex flex-col gap-2 text-xs">
+        <ul className="mt-2 flex flex-col gap-2 text-xs">
           {features.map((feature) => (
             <li>
               <svg
@@ -54,7 +54,7 @@ const Product = ({ product }) => {
             </li>
           ))}
         </ul>
-        <div className="mt-4">
+        <div className="mt-3">
           <button className="w-full btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-6 text-white hover:from-[#9514FA] hover:to-[#4F39F6] border-none font-bold">
             Buy Now
           </button>

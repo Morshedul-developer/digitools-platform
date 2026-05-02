@@ -5,7 +5,7 @@
     "description": "Professional resume templates designed for fresh graduates and entry-level job seekers.",
     "price": 19,
     "period": "one-time",
-    "tag": "new",
+    "tag": "New",
     "tagType": "new",
     "features": [
       "20+ resume templates",
@@ -14,7 +14,7 @@
       "Editable sections",
       "Cover letter templates"
     ],
-    "icon": "FileText"
+    "icon": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
   },
   {
     "id": 2,
@@ -22,7 +22,7 @@
     "description": "Advanced CV creation tool with AI-powered suggestions and modern templates.",
     "price": 12,
     "period": "monthly",
-    "tag": "popular",
+    "tag": "Popular",
     "tagType": "popular",
     "features": [
       "100+ templates",
@@ -31,7 +31,7 @@
       "Unlimited downloads",
       "Custom color themes"
     ],
-    "icon": "Briefcase"
+    "icon": "https://cdn-icons-png.flaticon.com/512/942/942748.png"
   },
   {
     "id": 3,
@@ -39,8 +39,8 @@
     "description": "Modern portfolio templates for developers, designers, and freelancers.",
     "price": 49,
     "period": "one-time",
-    "tag": "best seller",
-    "tagType": "best seller",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
     "features": [
       "Responsive design",
       "Next.js support",
@@ -48,7 +48,7 @@
       "Dark mode included",
       "Easy customization"
     ],
-    "icon": "Globe"
+    "icon": "https://cdn-icons-png.flaticon.com/512/1006/1006771.png"
   },
   {
     "id": 4,
@@ -56,7 +56,7 @@
     "description": "Complete toolkit to help freelancers attract clients and manage projects.",
     "price": 29,
     "period": "monthly",
-    "tag": "popular",
+    "tag": "Popular",
     "tagType": "popular",
     "features": [
       "Client proposal templates",
@@ -65,7 +65,7 @@
       "CRM dashboard",
       "Team collaboration"
     ],
-    "icon": "TrendingUp"
+    "icon": "https://cdn-icons-png.flaticon.com/512/1828/1828919.png"
   },
   {
     "id": 5,
@@ -73,8 +73,8 @@
     "description": "Premium UI components and layouts for modern online stores.",
     "price": 79,
     "period": "one-time",
-    "tag": "best seller",
-    "tagType": "best seller",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
     "features": [
       "250+ UI components",
       "Tailwind CSS support",
@@ -82,7 +82,7 @@
       "Figma files included",
       "Lifetime updates"
     ],
-    "icon": "ShoppingCart"
+    "icon": "https://cdn-icons-png.flaticon.com/512/891/891462.png"
   },
   {
     "id": 6,
@@ -90,7 +90,7 @@
     "description": "Interactive coding lessons and project-based learning platform.",
     "price": 99,
     "period": "yearly",
-    "tag": "new",
+    "tag": "New",
     "tagType": "new",
     "features": [
       "Full-stack roadmap",
@@ -99,7 +99,7 @@
       "Certificate of completion",
       "Community access"
     ],
-    "icon": "Code"
+    "icon": "https://cdn-icons-png.flaticon.com/512/6062/6062646.png"
   },
   {
     "id": 7,
@@ -107,7 +107,7 @@
     "description": "Business tools and templates to launch and scale your startup quickly.",
     "price": 59,
     "period": "monthly",
-    "tag": "popular",
+    "tag": "Popular",
     "tagType": "popular",
     "features": [
       "Pitch deck templates",
@@ -116,7 +116,7 @@
       "Analytics dashboard",
       "Collaboration tools"
     ],
-    "icon": "Rocket"
+    "icon": "https://cdn-icons-png.flaticon.com/512/3212/3212608.png"
   },
   {
     "id": 8,
@@ -124,8 +124,8 @@
     "description": "Generate high-quality blogs, captions, and marketing copy using AI.",
     "price": 149,
     "period": "yearly",
-    "tag": "best seller",
-    "tagType": "best seller",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
     "features": [
       "AI writing assistant",
       "SEO optimization",
@@ -133,23 +133,23 @@
       "Content scheduling",
       "Team workspace"
     ],
-    "icon": "Sparkles"
+    "icon": "https://cdn-icons-png.flaticon.com/512/4712/4712109.png"
   },
   {
-  "id": 9,
-  "name": "Shopify Success Toolkit",
-  "description": "All-in-one toolkit for building, customizing, and managing Shopify stores professionally.",
-  "price": 39,
-  "period": "monthly",
-  "tag": "popular",
-  "tagType": "popular",
-  "features": [
-    "Custom Shopify sections",
-    "Premium store templates",
-    "SEO optimization tools",
-    "Speed performance tips",
-    "Conversion-focused layouts"
-  ],
-  "icon": "Store"
-}
+    "id": 9,
+    "name": "Shopify Success Toolkit",
+    "description": "All-in-one toolkit for building, customizing, and managing Shopify stores professionally.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Custom Shopify sections",
+      "Premium store templates",
+      "SEO optimization tools",
+      "Speed performance tips",
+      "Conversion-focused layouts"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968919.png"
+  }
 ]

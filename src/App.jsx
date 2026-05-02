@@ -7,8 +7,11 @@ import Status from "./components/Status/Status";
 import Products from "./components/Products/Products";
 import Carts from "./components/Carts/Carts";
 import Steps from "./components/Steps/Steps";
+import Pricing from "./components/Pricing/Pricing";
 
 const productItems = fetch("/products.json").then((res) => res.json());
+
+const pricingItems = fetch("/pricings.json").then((res) => res.json());
 
 function App() {
   const [products, setProducts] = useState("products");
@@ -22,6 +25,7 @@ function App() {
       {products === "products" && <Products productItems={productItems} />}
       {products === "carts" && <Carts />}
       <Steps/>
+      <Pricing pricingItems={pricingItems}/>
     </>
   );
 }

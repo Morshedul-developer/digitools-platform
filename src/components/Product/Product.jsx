@@ -34,8 +34,8 @@ const Product = ({ product }) => {
         </p>
         <p className="text-gray-500">{description}</p>
         <ul className="mt-2 flex flex-col gap-2 text-xs">
-          {features.map((feature) => (
-            <li>
+          {features.map((feature,index) => (
+            <li key={index}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="size-4 me-2 inline-block text-success"

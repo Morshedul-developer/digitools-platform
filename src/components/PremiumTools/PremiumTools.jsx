@@ -1,4 +1,4 @@
-const PremiumTools = () => {
+const PremiumTools = ({ products, setProducts }) => {
   return (
     <div>
       <div className="text-center">
@@ -13,15 +13,21 @@ const PremiumTools = () => {
         <input
           type="radio"
           name="my_tabs_1"
-          className="w-1/2 btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-6 text-white hover:from-[#9514FA] hover:to-[#4F39F6] shadow-md border-none shadow-[#4F39F6]/90 font-bold"
+          className={
+            products === "products" ? "w-1/2 btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-6 text-white hover:from-[#9514FA] hover:to-[#4F39F6] shadow-md border-none shadow-[#4F39F6]/90 font-bold" : "tab w-1/2"
+          }
           aria-label="Products"
+          defaultChecked
+          onClick={() => setProducts("products")}
         />
         <input
           type="radio"
           name="my_tabs_1"
-          className="w-1/2 btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-6 text-white hover:from-[#9514FA] hover:to-[#4F39F6] shadow-md border-none shadow-[#4F39F6]/90 font-bold"
+          className={
+            products === "carts" ? "w-1/2 btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-6 text-white hover:from-[#9514FA] hover:to-[#4F39F6] shadow-md border-none shadow-[#4F39F6]/90 font-bold" : "tab w-1/2"
+          }
           aria-label="Cart(0)"
-          defaultChecked
+          onClick={() => setProducts("carts")}
         />
       </div>
     </div>

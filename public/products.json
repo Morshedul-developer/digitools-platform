@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Resume Pack",
+    "description": "Professional resume templates designed for fresh graduates and entry-level job seekers.",
+    "price": 19,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "20+ resume templates",
+      "ATS optimization",
+      "Export to PDF",
+      "Editable sections",
+      "Cover letter templates"
+    ],
+    "icon": "FileText"
+  },
+  {
+    "id": 2,
+    "name": "Pro CV Builder",
+    "description": "Advanced CV creation tool with AI-powered suggestions and modern templates.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "AI content suggestions",
+      "ATS-friendly formatting",
+      "Unlimited downloads",
+      "Custom color themes"
+    ],
+    "icon": "Briefcase"
+  },
+  {
+    "id": 3,
+    "name": "Portfolio Website Kit",
+    "description": "Modern portfolio templates for developers, designers, and freelancers.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Responsive design",
+      "Next.js support",
+      "SEO optimization",
+      "Dark mode included",
+      "Easy customization"
+    ],
+    "icon": "Globe"
+  },
+  {
+    "id": 4,
+    "name": "Freelancer Growth Plan",
+    "description": "Complete toolkit to help freelancers attract clients and manage projects.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Client proposal templates",
+      "Invoice generator",
+      "Project tracker",
+      "CRM dashboard",
+      "Team collaboration"
+    ],
+    "icon": "TrendingUp"
+  },
+  {
+    "id": 5,
+    "name": "E-Commerce UI Bundle",
+    "description": "Premium UI components and layouts for modern online stores.",
+    "price": 79,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "250+ UI components",
+      "Tailwind CSS support",
+      "Mobile-first design",
+      "Figma files included",
+      "Lifetime updates"
+    ],
+    "icon": "ShoppingCart"
+  },
+  {
+    "id": 6,
+    "name": "Developer Learning Hub",
+    "description": "Interactive coding lessons and project-based learning platform.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Full-stack roadmap",
+      "Coding challenges",
+      "Project tutorials",
+      "Certificate of completion",
+      "Community access"
+    ],
+    "icon": "Code"
+  },
+  {
+    "id": 7,
+    "name": "Startup Launch Suite",
+    "description": "Business tools and templates to launch and scale your startup quickly.",
+    "price": 59,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Pitch deck templates",
+      "Financial planning sheets",
+      "Marketing assets",
+      "Analytics dashboard",
+      "Collaboration tools"
+    ],
+    "icon": "Rocket"
+  },
+  {
+    "id": 8,
+    "name": "AI Content Creator",
+    "description": "Generate high-quality blogs, captions, and marketing copy using AI.",
+    "price": 149,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "AI writing assistant",
+      "SEO optimization",
+      "Multi-language support",
+      "Content scheduling",
+      "Team workspace"
+    ],
+    "icon": "Sparkles"
+  }
+]

@@ -1,24 +1,24 @@
 const PricingCard = ({ pricing }) => {
   const { name, shortDes, price, period, features, buttonText, tagName } = pricing;
   return (
-    <div className="card shadow-sm border border-gray-200 relative rounded-2xl">
+    <div className={`card shadow-sm border ${tagName === "Most Popular" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : "border-gray-200"} relative rounded-2xl`}>
       <div className="card-body">
         {
-            tagName === "Most Popular" && <span className="absolute -top-3 left-1/2 -translate-x-1/2 badge badge-md rounded-full font-semibold bg-[#FEF3C6] text-[#BB4D00] whitespace-nowrap">Most Popular</span>
+            tagName === "Most Popular" && <span className="absolute -top-3 left-1/2 -translate-x-1/2 badge badge-md rounded-full font-semibold bg-[#FEF3C6] text-[#BB4D00] border-none">Most Popular</span>
         }
         <div className="">
           <h2 className="text-2xl font-bold">{name}</h2>
-          <p className="text-[#627382] mb-3">{shortDes}</p>
+          <p className={`${tagName === "Most Popular" ? "text-white" : "text-[#627382]"} mb-3`}>{shortDes}</p>
           <span className="text-3xl font-bold">
-            ${price}<span className="text-[16px] font-normal text-[#627382]">/{period}</span>
+            ${price}<span className={`text-[16px] font-normal ${tagName === "Most Popular" ? "text-white" : "text-[#627382]"}`}>/{period}</span>
           </span>
         </div>
         <ul className="mt-3 flex flex-col gap-2 text-xs mb-2">
           {features.map((feature, index) => (
-            <li className="text-[#627382]" key={index}>
+            <li className={`${tagName === "Most Popular" ? "text-white" : "text-[#627382]"}`} key={index}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="size-4 me-2 inline-block text-success"
+                className={`size-4 me-2 inline-block ${tagName === "Most Popular" ? "text-white" : "text-success"}`}
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -35,7 +35,7 @@ const PricingCard = ({ pricing }) => {
           ))}
         </ul>
         <div className="mt-auto">
-          <button className="w-full btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-6 text-white hover:from-[#9514FA] hover:to-[#4F39F6] border-none font-bold">
+          <button className={`w-full btn rounded-full ${tagName === "Most Popular" ? "bg-white text-[#4F39F6]" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-6 text-white hover:from-[#9514FA] hover:to-[#4F39F6]"} border-none font-bold transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#4F39F6]/40 active:translate-y-0 active:scale-95`}>
             {buttonText}
           </button>
         </div>

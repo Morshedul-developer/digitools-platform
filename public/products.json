@@ -134,5 +134,22 @@
       "Team workspace"
     ],
     "icon": "Sparkles"
-  }
+  },
+  {
+  "id": 9,
+  "name": "Shopify Success Toolkit",
+  "description": "All-in-one toolkit for building, customizing, and managing Shopify stores professionally.",
+  "price": 39,
+  "period": "monthly",
+  "tag": "popular",
+  "tagType": "popular",
+  "features": [
+    "Custom Shopify sections",
+    "Premium store templates",
+    "SEO optimization tools",
+    "Speed performance tips",
+    "Conversion-focused layouts"
+  ],
+  "icon": "Store"
+}
 ]

@@ -19,6 +19,11 @@ function App() {
   const [products, setProducts] = useState("products");
   const [cards, setCards] = useState([]);
 
+  const handleRemove = (c) => {
+    const filteredCard = cards.filter((cd) => cd.id !== c.id);
+    setCards(filteredCard);
+  };
+
   return (
     <>
       <Navbar cards={cards} />
@@ -26,7 +31,7 @@ function App() {
       <Status />
       <PremiumTools products={products} setProducts={setProducts} cards={cards} />
       {products === "products" && <Products productItems={productItems} cards={cards} setCards={setCards} />}
-      {products === "carts" && <Carts cards={cards} setCards={setCards} />}
+      {products === "carts" && <Carts cards={cards} setCards={setCards} handleRemove={handleRemove} />}
       <Steps/>
       <Pricing pricingItems={pricingItems}/>
       <Workflow/>

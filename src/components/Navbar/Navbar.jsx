@@ -70,7 +70,7 @@ const Navbar = () => {
           >
             Log in
           </a>
-          <button className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-6 text-white hover:from-[#9514FA] hover:to-[#4F39F6] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#4F39F6]/40 active:translate-y-0 active:scale-95 hidden sm:block">
+          <button className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-6 text-white hover:from-[#9514FA] hover:to-[#4F39F6] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#4F39F6]/40 active:translate-y-0 active:scale-95 hidden sm:block border-none">
             Get Started
           </button>
         </div>

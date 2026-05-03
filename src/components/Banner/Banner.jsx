@@ -20,10 +20,10 @@ const Banner = () => {
             Products
           </p>
           <div className="flex gap-4 items-center">
-            <button className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-6 text-white hover:from-[#9514FA] hover:to-[#4F39F6] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#4F39F6]/40 active:translate-y-0 active:scale-95">
+            <button className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-6 text-white hover:from-[#9514FA] hover:to-[#4F39F6] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#4F39F6]/40 active:translate-y-0 active:scale-95 border-none">
               Explore Products
             </button>
-            <div className="rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] p-[1.5px] hover:-translate-y-1 hover:shadow-lg hover:shadow-[#4F39F6]/40 transition-all duration-300 active:translate-y-0 active:scale-95">
+            <div className="rounded-full border-none bg-linear-to-r from-[#4F39F6] to-[#9514FA] p-[1.5px] hover:-translate-y-1 hover:shadow-lg hover:shadow-[#4F39F6]/40 transition-all duration-300 active:translate-y-0 active:scale-95">
               <button className="btn rounded-full bg-white px-6 text-white flex items-center gap-2 ">
                 <img className="w-[15%]" src={Play} alt="" />{" "}
                 <span className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent font-bold">

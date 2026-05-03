@@ -10,6 +10,7 @@ import Steps from "./components/Steps/Steps";
 import Pricing from "./components/Pricing/Pricing";
 import Footer from "./components/Footer/Footer";
 import Workflow from "./components/Workflow/Workflow";
+import { toast } from "react-toastify";
 
 const productItems = fetch("/products.json").then((res) => res.json());
 
@@ -22,7 +23,8 @@ function App() {
   const handleRemove = (c) => {
     const filteredCard = cards.filter((cd) => cd.id !== c.id);
     setCards(filteredCard);
-  };
+    toast.error(`${c.name} removed.`);
+  }
 
   return (
     <>

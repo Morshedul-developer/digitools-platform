@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { HiOutlineCheck } from "react-icons/hi";
+import { toast } from "react-toastify";
 
 const Product = ({ product, cards, setCards }) => {
   const [click, setClick] = useState(false);
   const handleClick = () => {
-    setClick(!click);
+    setClick(true);
 
     const findCards = cards.find((c) => c.id === product.id);
     if (findCards) {
@@ -12,6 +13,7 @@ const Product = ({ product, cards, setCards }) => {
     }
     const newCards = [...cards, product];
     setCards(newCards);
+    toast.info(`${product.name} added to cart.`);
   };
 
   const { name, description, price, period, tag, tagType, features, icon } =

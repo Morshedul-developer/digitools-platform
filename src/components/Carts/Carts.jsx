@@ -1,9 +1,11 @@
 import { LuShoppingCart } from "react-icons/lu";
 import CartCard from "../CartCard/CartCard";
+import { toast } from "react-toastify";
 
 const Carts = ({ cards, setCards, handleRemove }) => {
   const handleCarts = () => {
     setCards([]);
+    toast.success("Payment successful.");
   };
 
   const total = cards.reduce((sum, card) => sum + card.price, 0);

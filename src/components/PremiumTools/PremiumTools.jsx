@@ -1,6 +1,6 @@
 const PremiumTools = ({ products, setProducts, cards }) => {
   return (
-    <div>
+    <div className="px-4 lg:px-0">
       <div className="text-center">
         <h1 className="text-5xl font-bold mb-4">Premium Digital Tools</h1>
         <p className="max-w-137.5 mx-auto text-[#627382] mb-4">

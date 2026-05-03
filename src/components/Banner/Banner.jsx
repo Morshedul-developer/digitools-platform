@@ -4,7 +4,7 @@ import Play from "../../assets/play.png";
 
 const Banner = () => {
   return (
-    <div className="px-4 py-15 max-w-7xl mx-auto">
+    <div className="px-4 lg:px-0 py-15 max-w-7xl mx-auto">
       <div className="flex items-center justify-between flex-col-reverse gap-12 lg:flex-row lg:gap-20">
         <div className="">
           <div className="badge badge-soft badge-primary gap-1.5 font-medium py-4 px-4 rounded-full mb-2">

@@ -4,7 +4,7 @@ import PricingCard from "../PricingCard/PricingCard";
 const Pricing = ({pricingItems}) => {
     const pricings = use(pricingItems);
   return (
-    <div className="py-24">
+    <div className="py-24 px-4 lg:px-0">
       <div className="max-w-7xl mx-auto">
         <div className="text-center">
           <h1 className="text-5xl font-bold mb-4">

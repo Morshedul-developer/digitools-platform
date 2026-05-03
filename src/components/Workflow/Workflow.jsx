@@ -1,7 +1,7 @@
 const Workflow = () => {
     return (
         <div className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-30 flex justify-center items-center">
-            <div className="text-center text-white">
+            <div className="text-center text-white px-4 lg:px-0">
                 <h2 className="text-4xl font-extrabold mb-4">Ready to Transform Your Workflow?</h2>
                 <p className="max-w-157 mx-auto leading-7 mb-8">Join thousands of professionals who are already using DigiTools to work smarter. Start your free trial today.</p>
                 <div className="flex justify-center gap-4 mb-4">

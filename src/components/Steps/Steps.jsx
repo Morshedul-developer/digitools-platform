@@ -4,7 +4,7 @@ import Rocket from "../../assets/rocket.png";
 
 const Steps = () => {
   return (
-    <div className="bg-[#F9FAFC] py-24">
+    <div className="bg-[#F9FAFC] py-24 px-4 lg:px-0">
       <div className="max-w-7xl mx-auto">
         <div className="text-center">
           <h1 className="text-5xl font-bold mb-4">Get Started in 3 Steps</h1>

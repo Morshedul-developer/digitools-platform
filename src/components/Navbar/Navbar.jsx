@@ -1,6 +1,6 @@
 import { IoCartOutline } from "react-icons/io5";
 
-const Navbar = () => {
+const Navbar = ({cards}) => {
   const links = (
     <>
       <li>
@@ -59,10 +59,12 @@ const Navbar = () => {
         </div>
         <div className="navbar-end flex items-center gap-5">
           <div className="relative inline-block">
-            <IoCartOutline className="cursor-pointer" size={20} />
-            <span className="absolute bg-red-500 rounded-full text-white w-4 h-4 flex items-center justify-center text-xs -top-2 -right-2">
-              0
+            <IoCartOutline className="cursor-pointer" size={21} />
+            {
+              cards.length > 0 && <span className="absolute bg-red-500 rounded-full text-white w-4.5 h-4.5 flex items-center justify-center text-xs -top-2.5 -right-2.5">
+              {cards.length}
             </span>
+            }
           </div>
           <a
             href="/login"

@@ -21,12 +21,12 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar cards={cards} />
       <Banner />
       <Status />
-      <PremiumTools products={products} setProducts={setProducts} />
+      <PremiumTools products={products} setProducts={setProducts} cards={cards} />
       {products === "products" && <Products productItems={productItems} cards={cards} setCards={setCards} />}
-      {products === "carts" && <Carts cards={cards} />}
+      {products === "carts" && <Carts cards={cards} setCards={setCards} />}
       <Steps/>
       <Pricing pricingItems={pricingItems}/>
       <Workflow/>

@@ -1,16 +1,5 @@
 import { useState } from "react";
-// import I1 from "../../assets/products/i-1.png";
-// import I2 from "../../assets/products/i-2.png";
-// import I3 from "../../assets/products/i-3.png";
-// import I4 from "../../assets/products/i-4.png";
-// import I5 from "../../assets/products/i-5.png";
-// import I6 from "../../assets/products/i-6.png";
-// import I7 from "../../assets/products/i-7.png";
-// import I8 from "../../assets/products/i-8.png";
-// import I9 from "../../assets/products/i-9.png";
 import { HiOutlineCheck } from "react-icons/hi";
-
-// const images = [I1, I2, I3, I4, I5, I6, I7, I8, I9];
 
 const Product = ({ product, cards, setCards }) => {
   const [click, setClick] = useState(false);
@@ -25,7 +14,7 @@ const Product = ({ product, cards, setCards }) => {
     setCards(newCards);
   };
 
-  const { id, name, description, price, period, tag, tagType, features, icon } =
+  const { name, description, price, period, tag, tagType, features, icon } =
     product;
 
   return (

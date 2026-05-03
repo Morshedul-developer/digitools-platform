@@ -29,13 +29,25 @@ function App() {
       <Navbar cards={cards} />
       <Banner />
       <Status />
-      <PremiumTools products={products} setProducts={setProducts} cards={cards} />
-      {products === "products" && <Products productItems={productItems} cards={cards} setCards={setCards} />}
-      {products === "carts" && <Carts cards={cards} setCards={setCards} handleRemove={handleRemove} />}
-      <Steps/>
-      <Pricing pricingItems={pricingItems}/>
-      <Workflow/>
-      <Footer/>
+      <PremiumTools
+        products={products}
+        setProducts={setProducts}
+        cards={cards}
+      />
+      {products === "products" && (
+        <Products
+          productItems={productItems}
+          cards={cards}
+          setCards={setCards}
+        />
+      )}
+      {products === "carts" && (
+        <Carts cards={cards} setCards={setCards} handleRemove={handleRemove} />
+      )}
+      <Steps />
+      <Pricing pricingItems={pricingItems} />
+      <Workflow />
+      <Footer />
     </>
   );
 }

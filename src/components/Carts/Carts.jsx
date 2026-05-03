@@ -1,10 +1,16 @@
 import { LuShoppingCart } from "react-icons/lu";
+import CartCard from "../CartCard/CartCard";
 
-const Carts = () => {
+const Carts = ({ cards }) => {
   return (
     <div className="max-w-7xl mx-auto mb-20">
       <div className="border border-gray-200 p-8 rounded-2xl shadow-xl">
         <h4 className="text-2xl font-bold mb-6">Your Cart</h4>
+        <div className="space-y-4">
+          {cards.map((card) => (
+            <CartCard key={card.id} card={card} />
+          ))}
+        </div>
         {/* empty cart */}
         <div className="text-center">
           <LuShoppingCart className="mx-auto text-7xl text-gray-300 mb-4" />

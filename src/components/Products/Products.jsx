@@ -1,7 +1,7 @@
 import { use } from "react";
 import Product from "../Product/Product";
 
-const Products = ({ productItems }) => {
+const Products = ({ productItems, cards, setCards }) => {
 
     const products = use(productItems);
     
@@ -9,7 +9,7 @@ const Products = ({ productItems }) => {
         <div className="max-w-7xl mx-auto mb-20">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7 border p-6 shadow-xl rounded-2xl border-gray-200">
                 {
-                    products.map(product => <Product key={product.id} product={product} />)
+                    products.map(product => <Product key={product.id} product={product} cards={cards} setCards={setCards} />)
                 }
             </div>
         </div>

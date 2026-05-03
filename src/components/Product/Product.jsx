@@ -12,12 +12,18 @@ import { HiOutlineCheck } from "react-icons/hi";
 
 const images = [I1, I2, I3, I4, I5, I6, I7, I8, I9];
 
-const Product = ({ product }) => {
-
+const Product = ({ product, cards, setCards }) => {
   const [click, setClick] = useState(false);
   const handleClick = () => {
     setClick(!click);
-  }
+
+    const findCards = cards.find((c) => c.id === product.id);
+    if (findCards) {
+      return;
+    }
+    const newCards = [...cards, product];
+    setCards(newCards);
+  };
 
   const { id, name, description, price, period, tag, tagType, features } =
     product;
@@ -65,10 +71,18 @@ const Product = ({ product }) => {
             </li>
           ))}
         </ul>
-        <button onClick={handleClick} className={`w-full btn rounded-full ${click ? "bg-green-600 text-white" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white hover:from-[#9514FA] hover:to-[#4F39F6]"} border-none font-bold mt-3`}>
-          {
-            click ? <span className="flex items-center gap-2"><HiOutlineCheck className="text-xl " />Added to Cart</span> : "Buy Now"
-          }
+        <button
+          onClick={handleClick}
+          className={`w-full btn rounded-full ${click ? "bg-green-600 text-white" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white hover:from-[#9514FA] hover:to-[#4F39F6]"} border-none font-bold mt-3`}
+        >
+          {click ? (
+            <span className="flex items-center gap-2">
+              <HiOutlineCheck className="text-xl " />
+              Added to Cart
+            </span>
+          ) : (
+            "Buy Now"
+          )}
         </button>
       </div>
     </div>

@@ -17,6 +17,7 @@ const pricingItems = fetch("/pricings.json").then((res) => res.json());
 
 function App() {
   const [products, setProducts] = useState("products");
+  const [cards, setCards] = useState([]);
 
   return (
     <>
@@ -24,8 +25,8 @@ function App() {
       <Banner />
       <Status />
       <PremiumTools products={products} setProducts={setProducts} />
-      {products === "products" && <Products productItems={productItems} />}
-      {products === "carts" && <Carts />}
+      {products === "products" && <Products productItems={productItems} cards={cards} setCards={setCards} />}
+      {products === "carts" && <Carts cards={cards} />}
       <Steps/>
       <Pricing pricingItems={pricingItems}/>
       <Workflow/>

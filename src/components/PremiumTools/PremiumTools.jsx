@@ -9,7 +9,7 @@ const PremiumTools = ({ products, setProducts }) => {
         </p>
       </div>
       {/* name of each tab group should be unique */}
-      <div className="tabs tabs-box justify-center w-62 mx-auto rounded-full mb-10 shadow-none border border-zinc-200 bg-white">
+      <div className="tabs tabs-box justify-center w-62 mx-auto rounded-full mb-10 shadow-sm border border-zinc-200 bg-white">
         <input
           type="radio"
           name="my_tabs_1"

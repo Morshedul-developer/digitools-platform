@@ -15,7 +15,7 @@ const Product = ({ product }) => {
     product;
 
   return (
-    <div className="card shadow-sm border border-gray-200 relative rounded-2xl hover:-translate-y-2 transition-all duration-300">
+    <div className="card shadow-sm border border-gray-200 relative rounded-2xl hover:-translate-y-2 transition-all duration-300 hover:border-gray-300">
       <div className="card-body">
         <span className={`badge badge-md font-medium rounded-full ${tagType === "best-seller" ? "bg-[#FEF3C6] text-[#BB4D00]" : tagType === "popular" ? "badge-soft badge-primary" : "bg-[#DBFCE7] text-green-600"} absolute top-2 right-2 capitalize`}>
           {tag}
